@@ -11,7 +11,19 @@
 
 <?php
 //  phpinfo(); 
-echo date('Y-m-d H:i:s');
+
+$date = date('Y-m-d H:i:s');
+$heure = date("H");
+if ($heure >= 22 && $heure <=7)
+{
+  echo('nuit')
+
+}
+
+else
+{
+  echo('jour')
+}
 ?>
 
 <nav class="one">
