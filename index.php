@@ -11,20 +11,32 @@
 
 <?php
 //  phpinfo(); 
-
 $date = date('Y-m-d H:i:s');
 $heure = date("h");
+  echo 'L adresse IP de l utilisateur est : '.$_SERVER['REMOTE_ADDR'];
+echo '   navigateur du client: '.$_SERVER['HTTP_USER_AGENT'];
 if ($heure <= "22" || $heure <="07")
 {
-  echo('<br style="color: royalblue;">' .$date.'<br>')
+  echo('<div style="background-color: blue; color: white;">' .$date.'</div>');
 
 }
 
 else
 {
-  echo('<br style="color: lighblue">' .$date.'<br>')
+  echo('<div style="color: lighblue">' .$date.'</div>');
 }
+
+$liste = ["un", "deux", "trois"]
+
+foreach ($liste as $element)
+{ echo '<ul>';
+  echo '<li>' .$element '</li>';
+
+}
+echo '</ul>';
+
 ?>
+
 
 <nav class="one">
     <ul id="liste">
