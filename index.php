@@ -13,16 +13,16 @@
 //  phpinfo(); 
 
 $date = date('Y-m-d H:i:s');
-$heure = date("H");
-if ($heure >= 22 && $heure <=7)
+$heure = date("h");
+if ($heure <= "22" || $heure <="07")
 {
-  echo('nuit')
+  echo('<br color="royalblue">' .$date.'<br>')
 
 }
 
 else
 {
-  echo('jour')
+  echo('<br color="lighblue">' .$date.'<br>')
 }
 ?>
 
