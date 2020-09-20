@@ -26,15 +26,7 @@ else
   echo('<div style="color: lighblue">' .$date.'</div>');
 }
 
-$liste = ["1" =>"un" ,  "3" => "deux", "3" => "trois"]
-
-foreach ($liste as $element)
-{ echo '<ul>';
-  echo '<li>' .$element '</li>';
-
-}
-echo '</ul>';
-
+include 'function.php';
 ?>
 
 
