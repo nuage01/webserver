@@ -26,7 +26,7 @@ else
   echo('<div style="color: lighblue">' .$date.'</div>');
 }
 
-$liste = ["un", "deux", "trois"]
+$liste = ["1" =>"un" ,  "3" => "deux", "3" => "trois"]
 
 foreach ($liste as $element)
 { echo '<ul>';
