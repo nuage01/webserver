@@ -16,13 +16,13 @@ $date = date('Y-m-d H:i:s');
 $heure = date("h");
 if ($heure <= "22" || $heure <="07")
 {
-  echo('<br color="royalblue">' .$date.'<br>')
+  echo('<br style="color: royalblue;">' .$date.'<br>')
 
 }
 
 else
 {
-  echo('<br color="lighblue">' .$date.'<br>')
+  echo('<br style="color: lighblue">' .$date.'<br>')
 }
 ?>
 
