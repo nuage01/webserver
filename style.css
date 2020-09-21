@@ -12,7 +12,8 @@ html, body{
 }
 #menu-deroulant {
 /* on centre le menu dans la page */
-  text-align: center;
+  /* text-align: center; */
+  margin-bottom: 20px;
 }
 #menu-deroulant li {
 /* on place les liens du menu horizontalement */
@@ -41,7 +42,7 @@ color:#000;
 
 div.form{
   border: solid;
-  border-bottom: 50px;
+  padding-bottom: 300px;
 }
 
 #one{
