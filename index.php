@@ -8,6 +8,7 @@
 </head>
 
 <body>
+<div class="form">
 <form action ="https://google.com/search?q="  method ="GET">
 <input type ="text" name="q" >
 <input type ="submit" value="entrez">
@@ -21,6 +22,7 @@
 		</ul>
 </ul>
 </form>
+</div>
 
 <?php
 //TD3
