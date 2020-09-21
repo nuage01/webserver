@@ -15,13 +15,12 @@
 <ul id="menu-deroulant">
 	<li><a href="#">type recherce</a>
 		<ul>
-			<li><input type ="text" name="tbm" value=isch >images</li>
-			<li><input type ="text" name="q" >Actu</li>
-			<li><input type ="text" name="q" >Web</li>
-			<li><input type ="text" name="q" >Vidéos</li>
+			<li><input type ="hidden" name="tbm" value=isch >images</li>
+			<li><input type ="hidden" name="q" >Actu</li>
+			<li><input type ="hidden" name="q" >Web</li>
+			<li><input type ="hidden" name="q" >Vidéos</li>
 		</ul>
 </ul>
-<input type ="submit" value="entrez">
 </form>
 </div>
 
