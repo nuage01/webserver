@@ -8,8 +8,29 @@
 </head>
 
 <body>
+<form action =""  method ="GET">
+<input type ="text" name="NOM" >
+<input type ="submit" value="entrez">
+<ul id="menu-deroulant">
+	<li><a href="#">type recherce</a>
+		<ul>
+			<li><a href="#">Web</a></li>
+			<li><a href="#">Actulaité</a></li>
+			<li><a href="#">Image</a></li>
+			<li><a href="#">Vidéos</a></li>
+		</ul>
+</ul>
+</form>
 
 <?php
+//TD3
+//include 'formulaire.php'
+
+
+
+
+
+
 //  phpinfo(); 
 $date = date('Y-m-d H:i:s');
 $heure = date("h");
@@ -28,6 +49,8 @@ else
 
 include 'function.php';
 ?>
+
+
 
 
 <nav class="one">
