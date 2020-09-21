@@ -9,7 +9,7 @@
 
 <body>
 <form action ="https://google.com/search?q="  method ="GET">
-<input type ="text" name="NOM" >
+<input type ="text" name="q" >
 <input type ="submit" value="entrez">
 <ul id="menu-deroulant">
 	<li><a href="#">type recherce</a>
