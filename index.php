@@ -15,7 +15,7 @@ try{
 $reponse = $base->query('SELECT * FROM  USERS');
 while($ligne = $reponse->fetch()){?>
 
-  <p><?php echo $ligne['login']; ?></p>
+  <p><?php echo $ligne['LOGIN']; ?></p>
 
 
   <?php
