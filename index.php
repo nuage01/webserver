@@ -13,12 +13,11 @@ try{
 }
 
 $reponse = $base->query('SELECT * FROM  USERS');
-while($ligne = $reponse->fetch()){?>
+$database_users = array();
+while($ligne = $reponse->fetch()){
 
-  <p><?php echo $ligne['LOGIN']; ?></p>
+$database_users[$ligne['LOGIN']] = $ligne['PASSWORD'];
 
-
-  <?php
  }
  
 $reponse->closeCursor();
@@ -29,7 +28,7 @@ $reponse->closeCursor();
 session_start();
 $bdd_username = array("lyes" => "lyes01", "antoine" => "antoine02", "amjad" => "amjad03", "louis" => "louis03");
 
-if (in_array($_POST['username'], $bdd_username ) && $bdd_username[$_POST['username']] == $_POST['password']) {header("location: main.php"); }
+if (in_array($_POST['username'], $database_users )  {header("location: main.php"); }
 else {}
 
   ?>"  method ="POST">
