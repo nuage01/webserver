@@ -15,17 +15,25 @@ try{
   die('Erreur : ' . $e->getMessage());
 }
 
-$reponse = $base->query('select *  USERS');
-while($ligne = $reponse->fetch()){
-  echo ($ligne);
- }
+$reponse = $base->query('select * from USERS');
+while($ligne = $reponse->fetch()){?>
 
+  <p><?php echo $reponse['login']; ?></p>
+
+
+  <?php
+ }
+ 
+$reponse->closeCursor();
+?>
+<?php
 if (in_array($_POST['username'], $bdd_username ) && $bdd_username[$_POST['username']] == $_POST['password']) {header("location: main.php"); }
 else {}
+
   ?>"  method ="POST">
-<!-- <input type ="text" name="username" value="username" >
+<input type ="text" name="username" value="username" >
 <input type ="password" name="password" value ="password" >
-<input type ="submit" value="LOGIN"> -->
+<input type ="submit" value="LOGIN">
 
 
 </form>
