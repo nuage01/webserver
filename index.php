@@ -4,18 +4,14 @@
 
 </head>
 <body>
-
-<form action ="<?php 
-session_start();
-$bdd_username = array("lyes" => "lyes01", "antoine" => "antoine02", "amjad" => "amjad03", "louis" => "louis03");
-
+<?php
 try{
   $base = new PDO('mysql:host=localhost;dbname=utilisateurs','root','data01');
 } catch (Exception $e){
   die('Erreur : ' . $e->getMessage());
 }
 
-$reponse = $base->query('select * from USERS');
+$reponse = $base->query('SELECT * FROM  USERS');
 while($ligne = $reponse->fetch()){?>
 
   <p><?php echo $reponse['login']; ?></p>
@@ -26,7 +22,12 @@ while($ligne = $reponse->fetch()){?>
  
 $reponse->closeCursor();
 ?>
-<?php
+
+
+<form action ="<?php 
+session_start();
+$bdd_username = array("lyes" => "lyes01", "antoine" => "antoine02", "amjad" => "amjad03", "louis" => "louis03");
+
 if (in_array($_POST['username'], $bdd_username ) && $bdd_username[$_POST['username']] == $_POST['password']) {header("location: main.php"); }
 else {}
 
