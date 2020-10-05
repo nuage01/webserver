@@ -15,18 +15,17 @@ try{
   die('Erreur : ' . $e->getMessage());
 }
 
-$reponse = $base->query('select login as l, password as p from  USERS where  Pays is not NULL');
+$reponse = $base->query('select *  USERS');
 while($ligne = $reponse->fetch()){
   echo ($ligne);
-
  }
 
 if (in_array($_POST['username'], $bdd_username ) && $bdd_username[$_POST['username']] == $_POST['password']) {header("location: main.php"); }
 else {}
   ?>"  method ="POST">
-<input type ="text" name="username" value="username" >
+<!-- <input type ="text" name="username" value="username" >
 <input type ="password" name="password" value ="password" >
-<input type ="submit" value="LOGIN">
+<input type ="submit" value="LOGIN"> -->
 
 
 </form>
