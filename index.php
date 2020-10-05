@@ -4,6 +4,7 @@
 
 </head>
 <body>
+
 <?php
 try{
   $base = new PDO('mysql:host=localhost;dbname=utilisateurs','root','data01');
@@ -14,7 +15,7 @@ try{
 $reponse = $base->query('SELECT * FROM  USERS');
 while($ligne = $reponse->fetch()){?>
 
-  <p><?php echo $reponse['login']; ?></p>
+  <p><?php echo $ligne['login']; ?></p>
 
 
   <?php
