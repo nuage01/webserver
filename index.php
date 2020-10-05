@@ -16,8 +16,7 @@ $reponse = $base->query('SELECT * FROM  USERS');
 $database_users = array();
 while($ligne = $reponse->fetch()){
 
-$database_users[$ligne['LOGIN']] = $ligne['PASSWORD'];
-
+$database_users += [$ligne['LOGIN'] => $ligne['PASSWORD']];
  }
  
 $reponse->closeCursor();
